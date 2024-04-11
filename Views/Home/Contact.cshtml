@@ -1,0 +1,98 @@
+﻿
+@{
+    ViewData["Title"] = "Contact";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: white; 
+            color: black; /* Black text color */
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #F5F5DCf;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: black;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            text-align: justify;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            margin-bottom: 20px;
+        }
+
+            .contact-info p {
+                margin-bottom: 10px;
+            }
+
+        .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+            input[type="submit"]:hover {
+                background-color: black;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <div class="contact-info">
+            <p>Have a question or want to get in touch with us?</p>
+            <p>Call us on <a href="tel:+2721034589">+27 210 345 89</a> or email us at <a href="mailto:mrk.crafts@gmail.com">mrk.crafts@gmail.com</a>.</p>
+            <p>Follow us on Instagram <a href="https://www.instagram.com/MrKEmporium/">MrKEmporium</a>.</p>
+        </div>
+        <div class="contact-form">
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="text" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+                <input type="submit" value="Send Message">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

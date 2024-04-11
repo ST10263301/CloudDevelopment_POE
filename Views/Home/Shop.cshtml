@@ -1,0 +1,115 @@
+﻿
+@{
+    ViewData["Title"] = "Shop";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square Pictures Grid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+            background-image: url('https://i.pinimg.com/564x/e6/df/70/e6df702c2f33c2191f2e08ed93b21343.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        h1 {
+            text-align: center;
+            color: black;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 250px);
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .grid-item {
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+            .grid-item img {
+                width: 200px;
+                height: 200px;
+                border-radius: 10px;
+            }
+
+        .label {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .price {
+            margin-top: 5px;
+            font-weight: bold;
+            color: #333; /* Adjust price color */
+        }
+    </style>
+</head>
+<body>
+    <h1>S H O P </h1>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="https://i.pinimg.com/564x/27/43/ed/2743edd34c90813b7c39fe4540507f7a.jpg" alt="Square Picture 1">
+            <div class="label">6 piece mug set</div>
+            <div class="price">R480</div>
+        </div>
+        <div class="grid-item">
+            <img src="https://i.pinimg.com/736x/e4/1e/a1/e41ea17977076f572e4bc426fbd51d44.jpg" alt="Square Picture 2">
+            <div class="label">A bowl</div>
+            <div class="price">R379.00</div>
+        </div>
+        <div class="grid-item">
+            <img src="https://i.pinimg.com/564x/41/bd/32/41bd323a1d406fd1e0e8632fa0350721.jpg" alt="Square Picture 3">
+            <div class="label">Pot Plant</div>
+            <div class="price">R699.00</div>
+        </div>
+        <div class="grid-item">
+            <img src="https://i.pinimg.com/564x/e3/e6/96/e3e69685e459d04ca7c81016a2ff42f3.jpg" alt="Square Picture 4">
+            <div class="label">Jug</div>
+            <div class="price">R509.00</div>
+        </div>
+        <div class="grid-item">
+            <img src="https://i.pinimg.com/564x/6c/52/4c/6c524c8481b8f98dc6f0cc349965407f.jpg" alt="Square Picture 5">
+            <div class="label">Utensil Crock</div>
+            <div class="price">R549.00</div>
+        </div>
+        <div class="grid-item">
+            <img src="https://i.pinimg.com/564x/c1/b5/f6/c1b5f6ae722ca118e3110862f9d067f1.jpg" alt="Square Picture 6">
+            <div class="label"> Outdoor Pot Plant</div>
+            <div class="price">R1199.00</div>
+        </div>
+        <div class="grid-item">
+            <img src="https://i.pinimg.com/564x/03/40/ee/0340ee51e331c8cc236661888bb412b3.jpg" alt="Square Picture 7">
+            <div class="label">Cloche Bell Jar</div>
+            <div class="price">R799.00</div>
+        </div>
+        <div class="grid-item">
+            <img src="https://i.pinimg.com/564x/0d/aa/ef/0daaef72955379b94f657743b9d3d94a.jpg" alt="Square Picture 8">
+            <div class="label">Outdoor Ornament</div>
+            <div class="price">R1499.00</div>
+        </div>
+        <div class="grid-item">
+            <img src="https://i.pinimg.com/564x/da/fd/69/dafd69ec60e53d857ce9d98268d98a52.jpg" alt="Square Picture 9">
+            <div class="label">6 piece plate set</div>
+            <div class="price">R999.00</div>
+        </div>
+    </div>
+</body>
+</html>
+
