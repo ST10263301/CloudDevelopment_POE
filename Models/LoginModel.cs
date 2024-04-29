@@ -1,8 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Data.SqlClient;
 
 namespace CloudDevelopment.Models
 {
-    public class LoginModel 
+    public class LoginModel
     {
         public static string con_string = "Integrated Security=SSPI;Persist Security Info=False;User ID=\"\";Initial Catalog=test;Data Source=labVMH8OX\\SQLEXPRESS";
 

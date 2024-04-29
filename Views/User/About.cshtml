@@ -1,5 +1,19 @@
-﻿<html>
-<title> keens webpage </title>
-<head> keens webpage </head>
+﻿@model CloudDevelopment.Models.tblUsersModel
+@{
+    ViewData["Title"] = "Sign Up";
+}
 
-</html>
+<h1>About</h1>
+<p>you need to sign up in the website for the application.</p>
+
+<body>
+    <form action="About" method="post">
+        <p>Sign Up</p>
+        <input type="text" name="Name" placeholder="Name" required>
+        <input type="text" name="Surname" placeholder="Surname" required>
+        <input type="text" name="Email" placeholder="example@gmail.com" required>
+        <input type="text" name="Password" placeholder="Password" required>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
