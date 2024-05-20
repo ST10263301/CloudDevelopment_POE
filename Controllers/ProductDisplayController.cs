@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CloudDevelopment.Controllers
 {
-    public class ProductDisplayController
+    public class ProductDisplayController : Controller
     {
         [HttpGet]
         public IActionResult Index()

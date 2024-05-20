@@ -5,7 +5,7 @@ namespace CloudDevelopment.Models
 {
     public class LoginModel
     {
-        public static string con_string = "Integrated Security=SSPI;Persist Security Info=False;User ID=\"\";Initial Catalog=test;Data Source=labVMH8OX\\SQLEXPRESS";
+        public static string con_string = "Server=tcp:keenias-server.database.windows.net,1433;Initial Catalog=keenia-db;Persist Security Info=False;User ID=keenia;Password=Geemooi2005!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30";
 
 
         public int SelectUser(string email, string name)
